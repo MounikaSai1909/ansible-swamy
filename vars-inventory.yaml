@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
   - name: print information
-    ansible.buitlin.bebug:
+    ansible.builtin.bebug:
      msg: "Hi,We are learning {{Course}}, from Trainer {{Trainer}},Duration is {{Duration}}"
