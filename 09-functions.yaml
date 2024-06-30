@@ -11,9 +11,9 @@
    - name: number is less than 10
      ansible.builtin.debug:
        msg: "the number {{NUMBER}} which you enter is less than 10"
-     when: NUMBER < 10
+     when: NUMBER | int < 10
   
    - name: number is greater than 10
      ansible.builtin.debug:
        msg: "the number {{NUMBER}} which you enter is greater than or equal to 10"
-     when: NUMBER >= 10  
+     when: NUMBER | int >= 10  
