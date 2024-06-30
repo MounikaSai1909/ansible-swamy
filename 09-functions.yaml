@@ -5,8 +5,8 @@
   hosts: localhost
   vars_prompt:
    - name: NUMBER
-   prompt: please enter the number
-   private: true
+     prompt: please enter the number
+     private: true
   tasks: 
    - name: number is less than 10
      ansible.builtin.debug:
