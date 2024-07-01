@@ -55,3 +55,13 @@
    - name: converting dictionary into list
      ansible.builtin.debug:
       msg: " {{ dict | dict2items }}"
+
+## convert list into dictionary
+- name: convert list into dictionary
+  hosts: localhost
+  vars:
+    list: [{'key': 'Course', 'value': 'Devops with AWS'}, {'key': 'Trainer', 'value': 'Siva'}, {'key': 'Duration', 'value': '120hrs'}]
+  tasks:
+   - name: convert list into dictionary
+     ansible.bultin.debug:
+       msg: "{{ list | items2dict }}"
