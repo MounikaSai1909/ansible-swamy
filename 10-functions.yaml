@@ -63,5 +63,5 @@
     list: [{'key': 'Course', 'value': 'Devops with AWS'}, {'key': 'Trainer', 'value': 'Siva'}, {'key': 'Duration', 'value': '120hrs'}]
   tasks:
    - name: convert list into dictionary
-     ansible.bultin.debug:
+     ansible.builtin.debug:
        msg: "{{ list | items2dict }}"
